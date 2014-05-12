@@ -8,7 +8,7 @@ def is_vowel(letter):
 
 # HOW TO DEFINE EXCEPTION CLASS: class ErrorName(Exception):
 # def __init__(self, vars): Exception.__init__(self) self.var = var
-class InputException(Exception):
+class CharacterInputException(Exception):
 	'''A user-defined exception class.'''
 	def __init__(self, length, reqlength):
 		Exception.__init__(self)
@@ -19,9 +19,9 @@ class InputException(Exception):
 try:
 	text = str(raw_input('Enter a character : '))
 	if len(text) != 1: # raises error if string isn't length
-		raise InputException(len(text), 1)
-except InputException as err:
-		print ('LongInputException: The input was ' + \
+		raise CharacterInputException(len(text), 1)
+except CharacterInputException as err:
+		print ('CharacterInputException: The input was ' + \
 			  '{} long, expected only {} character') \
 			  .format(err.length, err.reqlength)
 else:
