@@ -7,20 +7,21 @@
 # HOW TO RAISE ERROR: try: raise...except ErrorName as err:... else:
 
 def is_vowel(letter):
+	letter = letter.lower() # makes letter lowecase
 	return letter == ('a' or 'e' or 'i' or 'o' or 'u')
 
-class LongInputException(Exception):
+class InputException(Exception):
 	'''A user-defined exception class.'''
-	def __init__(self, length, atleast):
+	def __init__(self, length, reqlength):
 		Exception.__init__(self)
 		self.length = length
 		self.reqlength = reqlength
 
 try:
 	text = str(raw_input('Enter a character : '))
-	if len(text) != 1: # if string isn't length 1
-		raise LongInputException(len(text), 1)
-except LongInputException as err:
+	if len(text) != 1: # raises error if string isn't length
+		raise InputException(len(text), 1)
+except InputException as err:
 		print ('LongInputException: The input was ' + \
 			  '{} long, expected only {} character') \
 			  .format(err.length, err.reqlength)
