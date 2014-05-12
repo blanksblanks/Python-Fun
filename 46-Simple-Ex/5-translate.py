@@ -15,5 +15,5 @@ for robber's  language) and double every consonant with
 print translate('This is fun')
 print ""
 
-text = str(raw_input('Enter some text : '))
-print 'Translation : ' + str(translate(text))
+something = str(raw_input('Enter some text : '))
+print 'Translation : ' + str(translate(something))
