@@ -9,7 +9,6 @@ def max_of_three(a, b, c):
 	else:
 		return c
 
-# Accepts three numbers from user as arguments
 one = int(raw_input('Enter the first number : '))
 two = int(raw_input('Enter the second number : '))
 three = int(raw_input('Enter the third number : '))
