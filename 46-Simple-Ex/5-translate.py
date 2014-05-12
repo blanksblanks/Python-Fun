@@ -1,7 +1,7 @@
 # encoding=utf-8
 
 def translate(text, consonants = 'bcdfghjklmnpqrstvwxyz'):
-	'''
+	''' (text) -> text
 	Defines function translate() that will translate a text into "rövarspråket"
 	(Swedish for "robber's language"), i.e. double every consonant and place
 	an occurrence of "o" in between.
