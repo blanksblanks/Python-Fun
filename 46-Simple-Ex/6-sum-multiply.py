@@ -1,24 +1,27 @@
-# Defines functions sum() and multiply() that sums and multiplies all numbers in a list. 
-# For example, sum([1, 2, 3, 4]) should return 10, and multiply() should return 24.
-
-def sumList(List):
+def sumList(sum_list):
+	''' (list) -> int
+	Defines functions sum() that sums all numbers in a list. 
+	For example, sum([1, 2, 3, 4]) should return 10.
+    '''
     total = 0
-    for i in List:
-        total += int(List[i-1])
+    for i in sum_list:
+        total += int(sum_list[i-1])
     return total
  
-def multiplyList(List):
+def multiplyList(multiply_list):
+	''' (list) -> int
+	Defines function multiplyList() that multiplies all numbers in a list. 
+	For example, multiplyList([1, 2, 3, 4]) should return 24.
+    '''
     final = 1
-    for i in List:
-        final *= int(List[i-1])
+    for i in multiply_list:
+        final *= int(multiply_list[i-1])
     return final
  
 myList = [1,2,3,4]
  
 print ("List of numbers: " + str(myList))
- 
 print("Sum total: " + str(sumList(myList)))
- 
 print("Multiplied total: " +str(multiplyList(myList)))
 
 # ** is supposed to refer to VarArgs parameters

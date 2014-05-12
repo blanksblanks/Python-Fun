@@ -1,7 +1,8 @@
-# Defines a function max_of_three() that takes three numbers as 
-# arguments and returns the largest of them.
-
 def max_of_three(a, b, c):
+''' (int, int, int) -> int
+Defines a function max_of_three() that takes three numbers as 
+arguments and returns the largest of them.
+'''
 	if (a > b) & (a > c):
 		return a
 	elif b > c:
