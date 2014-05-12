@@ -25,7 +25,7 @@ except LongInputException as err:
 			  '{} long, expected only {} character') \
 			  .format(err.length, err.reqlength)
 else:
-	if is_vowel(text):
-		print 'True: Yes, it is a vowel'
+	if is_vowel(text): # if returns true
+		print 'Yes, it is a vowel'
 	else:
-		print 'False: No, it is not a vowel'
+		print 'No, it is not a vowel'
