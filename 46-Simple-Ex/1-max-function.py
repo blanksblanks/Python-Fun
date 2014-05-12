@@ -1,3 +1,4 @@
+
 # Defines a function max() that takes two numbers as arguments
 # and returns the largest of them
 
@@ -11,7 +12,8 @@ def max_fxn(a, b): # because Python has max() built-in already
 	else:
 		return b
 
-print max_fxn(10, 20)
-print max_fxn(10, 10)
-print max_fxn(12, 5)
-print max_fxn(3.14, 3.15)
+# Accepts three numbers from user as arguments
+
+one = int(raw_input('Enter first number : '))
+two = int(raw_input('Enter second number: '))
+print 'The largest number is ' + str(max_fxn(one, two)) + '.'
