@@ -1,6 +1,3 @@
-def reverse(text):
-    return text[::-1]
-
 def is_palindrome(text):
 	''' (str) -> bool -> str
 	Defines a function is_palindrome() that recognizes palindromes
