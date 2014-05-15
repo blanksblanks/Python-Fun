@@ -1,19 +1,5 @@
-def list_convert(wordlist, intlist = []):
-	''' (list) ->
-	Defines a function that maps a list of words into a list of integers representing
-	the lengths of the correponding words.
-	'''
-	for i in range(len(wordlist)):
-		intlist.append(len(wordlist[i]))
-	return intlist
-
-def max_in_list(newlist):
-	''' (list) -> int
-	Defines a a function max_in_list() that takes a list of numbers and returns
-	the largest one.
-	'''
-	sortedlist = sorted(newlist) # sorted() sorts from min to max
-	return sortedlist[-1] # returns last number i.e. max
+from ex13 import max_in_list
+from ex14 import list_convert
 
 def find_longest_word(alist):
 	''' (list) -> str -> int
