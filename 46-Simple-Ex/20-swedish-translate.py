@@ -14,8 +14,9 @@ def swedish_translate(text):
                   "year":"år"}
 	text = text.lower()
 	for word in text.split(" "):
-		if (str(dictionary.get(word))) != False: #get(word) same as [word]
+		if (str(dictionary.get(word))) != False:
 			text = text.replace(word, str(dictionary[word]))
+			#unlike dic[word], dic.get(word) DOESN'T cause error if key not found
 		else:
 			text = "This could not be translated."
 	return text
