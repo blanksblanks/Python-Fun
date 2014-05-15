@@ -1,7 +1,7 @@
 import re
 
 def make_3sg_form(verb):
-    '''
+    ''' (str) -> str
     Defines a function  make_3sg_form() which given a verb in infinitive form returns its
     third person singular form. The third person singular verb form in English is d
     distinguished by the suffix -s, which is added to the stem of the infinitive form:
