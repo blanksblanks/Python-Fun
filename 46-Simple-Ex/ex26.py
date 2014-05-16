@@ -1,9 +1,7 @@
 def max_in_list(numbers):
-	'''
-	Using the higher order function reduce(), write a function max_in_list()
-	that takes a list of numbers and returns the largest one. Then ask
-	yourself: why define and call a new function, when I can just as well call
-	the reduce() function directly?
+	''' (list) -> int
+	Defines a function max_in_list() using the higher order function reduce().
+	Why define and call a new function, when one can call reduce() directly?
 	
 	reduce(...)
     reduce(function, sequence[, initial]) -> value

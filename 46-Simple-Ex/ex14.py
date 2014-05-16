@@ -1,5 +1,5 @@
 def list_convert(wordlist, intlist = []):
-	''' (list) ->
+	''' (stringlist) -> intlist
 	Defines a function that maps a list of words into a list of integers representing
 	the lengths of the correponding words.
 	'''
