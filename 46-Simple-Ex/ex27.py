@@ -24,11 +24,11 @@ def lengths_map(words):
 
 def lengths_list(words):
 	''' (strlist) -> intlist
-	Method 3: using list comprehensions.
+	Method 3: using list comprehensions
 	'''
 	return [len(word) for word in words]
 
 ourzoo = ['cat','snake','lizard','fish','frog', 'dragon', 'gecko']
-print lengths_for(ourzoo)
-print lengths_map(ourzoo)
-print lengths_list(ourzoo)
+print 'Using for-loop : ' + str(lengths_for(ourzoo))
+print 'Using higher order map function : ' + str(lengths_map(ourzoo))
+print 'Using list comprehensions : ' + str(lengths_list(ourzoo))
