@@ -47,7 +47,7 @@ class Cat(Pet):
 	'''Represents a cat of the Pet class'''
 	# Cat will complain it's still hungry after eating
 	def eat(self):
-		print "%s is eating..." % (self.name)
+		Pet.eat(self)
 		print "I'm still hungry, meow"
 
 class Dog(Pet):
